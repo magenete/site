@@ -1,0 +1,24 @@
+#
+# Copyright (c) 2015 Magenete Systems OÜ <magenete.systems@gmail.com>.
+#
+
+magenete:
+  html: html5
+  company:
+    name: Magenete Systems
+    copyright: Magenete Systems OÜ
+    year: 2015
+    phone: +375 29 317 9210
+    skype: magenete.systems
+    github: https://github.com/magenete
+    email:
+      info: i@magenete.systems
+      cv: cv@magenete.systems
+      investor: in@magenete.systems
+    location:
+      1: 10117&nbsp;Tallinn,&nbsp;Estonia
+      2: Narva&nbsp;maantee&nbsp;7,&nbsp;634
+      map: http://maps.google.com/maps?q=Narva+maantee+7,+Harjumaa,+Tallinn,+Estonia&layer=tc&t=m&z=17&source=embed&output=svembed
+  locale:
+    default: en
+    list: ru ee en

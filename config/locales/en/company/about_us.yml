@@ -1,0 +1,12 @@
+#
+# Copyright (c) 2015 Magenete Systems OÜ <magenete.systems@gmail.com>.
+#
+
+en:
+  pages:
+    company/about_us:
+      title: About us
+      keywords: magenete ruby rails ror linux docker
+      description: About company page
+      id: 1
+      title_head: HInformation about your company

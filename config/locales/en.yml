@@ -1,0 +1,19 @@
+#
+# Copyright (c) 2015 Magenete Systems OÜ <magenete.systems@gmail.com>.
+#
+
+# English
+
+en:
+  vendor:
+    locale: english
+    name: Magenete Systems OÜ
+    copyright: All rights reserved
+    motto:
+      1: LET TECHNOLOGY TO WORK
+      2: FOR YOU AND THE NATURE
+
+  root:
+    title: Welcome to Magenete
+    keywords: ruby rails ror linux docker sinatra
+    description: Home page

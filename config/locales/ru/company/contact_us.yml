@@ -1,0 +1,15 @@
+#
+# Copyright (c) 2015 Magenete Systems OÜ <magenete.systems@gmail.com>.
+#
+
+# Russian
+
+ru:
+  pages:
+    company/contact_us:
+      title: Наши контакты
+      keywords: мадженете руби рэйлс рор линукс докер
+      description: Страница о контатах
+      id: 2
+      title_head: Информация о контактах
+      view_map: True

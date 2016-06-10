@@ -1,0 +1,15 @@
+#
+# Copyright (c) 2015 Magenete Systems OÜ <magenete.systems@gmail.com>.
+#
+
+# Estonian
+
+ee:
+  pages:
+    company:
+      title: О нашэй компанii
+      title_menu: Наша компания
+      keywords: мадженете руби рэйлс рор линукс
+      description: "Страница о нас"
+      id: 1
+      title_head: О нашей компании

@@ -1,0 +1,91 @@
+/*
+ * Copyright (c) 2015 Magenete Systems OÜ <magenete.systems@gmail.com>.
+ */
+
+#block_image #image_1,
+#block_image #image_2,
+#block_image #image_3,
+#block_image #image_4,
+#block_image #image_5
+{
+  left: 0px;
+  border: 0px;
+  width: 100%;
+  height: 320px;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+  display: block;
+  background-position: center center;
+  background-repeat: repeat-x;
+  outline: none;
+  position: absolute;
+  background-image: url('../images/image_1.jpg');
+}
+#block_image #image_2
+{
+  background-image: url('../images/image_2.jpg');
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#block_image #image_3
+{
+  background-image: url('../images/image_3.jpg');
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#block_image #image_4
+{
+  background-image: url('../images/image_4.jpg');
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#block_image #image_5
+{
+  background-image: url('../images/image_5.jpg');
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+#block_image #text_image_1,
+#block_image #text_image_2
+{
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+  overflow: auto;
+  cursor: default;
+}
+#block_image #text_image_1 a,
+#block_image #text_image_2 a
+{
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 14px !important;
+  line-height: 32px;
+  font-family: Arial, "Helvetica Neue", "Lucida Grande", sans-serif !important;
+  background-position: left top;
+  background-repeat: repeat;
+//  background-image: url('../images/bg_blue.png');
+  background-color: #0099e6;//0088cc;//006699;
+  padding: 8px 64px 8px 64px;
+  word-spacing: 4px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+  overflow: auto;
+  cursor: default;
+}
+#block_image #text_image_1
+{
+  padding: 48px 0px 0px 30%;
+}
+#block_image #text_image_2
+{
+  padding: 24px 0px 0px 50%;
+}

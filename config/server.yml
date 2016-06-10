@@ -1,0 +1,9 @@
+#
+# Copyright (c) 2015 Magenete Systems OÜ <magenete.systems@gmail.com>.
+#
+
+development:
+  name: thin
+  port: 8080
+  bind: 127.0.0.1
+  host: api.cwq.as

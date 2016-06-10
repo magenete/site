@@ -1,0 +1,19 @@
+#
+# Copyright (c) 2015 Magenete Systems OÜ <magenete.systems@gmail.com>.
+#
+
+# Russian
+
+ru:
+  vendor:
+    locale: русский
+    name: ООО "Мадженете Системс"
+    copyright: Все права защищены
+    motto:
+      1: ПОЗВОЛЬТЕ ТЕХНОЛОГИЯМ РАБОТАТЬ
+      2: ДЛЯ ВАС И ПРИРОДЫ
+
+  root:
+    title: Добро пожаловать на сайт Мадженете
+    keywords: руби рэйлс рор линукс докер синатра
+    description: Главная страница

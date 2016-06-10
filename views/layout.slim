@@ -1,0 +1,184 @@
+doctype html
+html
+  head
+    title #{title} :: #{MAGENETE::CONFIGURATION[:company][:name]}
+    meta http-equiv='Content-Type' content="text/html; charset=#{MAGENETE::ENCODING_DEFAULT}"
+    meta http-equiv='Content-Style-Type' content='text/css'
+    meta http-equiv='Content-Script-Type' content='text/javascript'
+    meta http-equiv='Content-Language' content="#{I18n.locale}"
+    meta http-equiv='X-UA-Compatible' content='IE=edge, chrome=1'
+    meta name='viewport' content='width=device-width, initial-scale=1.0'
+    meta name='description' content=description
+    meta name='keywords' content=keywords
+    meta name='author' content=MAGENETE::CONFIGURATION[:company][:copyright]
+    meta name='copyright' content=MAGENETE.get_copyright
+    link rel='shortcut icon' type='image/x-icon' href="/images/#{MAGENETE::NAME}.ico"
+    link rel='stylesheet' href="/stylesheets/#{page}.css" media='all' type='text/css'
+    - if @js_file
+      script type='text/javascript' charset=MAGENETE::ENCODING_DEFAULT src="/javascripts/#{@js_file}.js"
+  body
+    #page_top
+    #block_scroll_top
+      a#scroll_top href='#page_bottom'
+      #preload_scroll_top_select
+    .block_header
+      #header
+        #block_lang
+          div
+            - for l in MAGENETE::CONFIGURATION[:locale][:list] do
+              - if l[0] != I18n.locale
+                div
+                  a.lang href="/#{l[0]}/#{page}" #{l[1]}
+        #block_logo
+          a.logo href="/#{I18n.locale}"
+      .line_black
+
+      #block_menu_top
+        #menu_top
+          ul
+            li
+              a href="#" SOLUTIONS
+              .line_black
+              ul
+                li
+                  a href="#" Your&nbsp;agile&nbsp;team
+                li
+                  a href="#" Offshore&nbsp;development
+                li
+                  a href="#" Software&nbsp;delivery
+            li
+              a href="#" SERVICES
+              .line_black
+              ul
+                li
+                  a href="#" Consulting
+                li
+                  a href="#" Product&nbsp;development
+                li
+                  a href="#" Application&nbsp;development
+                li
+                  a href="#" Application&nbsp;testing
+                  ul
+                    li
+                      a href="#" Testing&nbsp;services
+                    li
+                      a href="#" Test&nbsp;automation
+                    li
+                      a href="#" Performance&nbsp;testing&nbsp;&&nbsp;optimization
+                li
+                  a href="#" Application&nbsp;maintenance&nbsp;&&nbsp;support
+            li
+              a href="#" COMPANY
+              .line_black
+              ul
+                li
+                  a href="/en/company/about_us" About&nbsp;Us
+                li
+                  a href="#" Expertise
+                li
+                  a href="/en/company/contact_us" Contact&nbsp;Us
+
+    .block_body
+      - if @view_map
+        iframe.location_map frameborder="0" scrolling="no" marginheight="0" marginwidth="0" align="middle" wmode="transparent" src=MAGENETE::CONFIGURATION[:company][:location][:map]
+      - else
+        #block_image
+          #image_1
+          #image_2
+          #image_3
+          #image_4
+          #image_5
+          #text_image_1
+            a #{_t(:vendor)[:motto][1]}
+          #text_image_2
+            a #{_t(:vendor)[:motto][2]}
+      .line_black
+      #boder
+        #block_content
+          - if @root
+          - else
+            a#content_head #{title_head}
+            .line_black_content
+            #block_content_path
+              - for path in pathes do
+                .block_path
+                  a.path href="/#{I18n.locale}/#{path}" #{titles[pathes.index(path)]}
+                - if path != pathes[-1]
+                  .block_path
+                    .sep
+          #content
+            == yield
+    .block_footer
+      #footer
+        #sub_footer
+          #block_contacts
+            .block_info
+              .skype
+                .text
+                  a.info_title href="skype:#{MAGENETE::CONFIGURATION[:company][:skype]}" #{MAGENETE::CONFIGURATION[:company][:skype]}
+            .block_info
+              .phone
+               .text
+                  a.info_text #{MAGENETE::CONFIGURATION[:company][:phone]}
+            .block_info
+              .email
+                .text
+                  a.info_title href="mailto:#{MAGENETE::CONFIGURATION[:company][:email][:info]}" #{MAGENETE::CONFIGURATION[:company][:email][:info]}
+            .block_info
+              .location
+                .text
+                  a.info_location #{{MAGENETE::CONFIGURATION[:company][:location][1]}} #{{MAGENETE::CONFIGURATION[:company][:location][2]}}
+          #block_menu_bottom
+            #menu_bottom
+              ul#footer_columns
+                li.footer_column
+                  a.footer_title SOLUTIONS
+                  ul.footer_columns_sub
+                    li.footer_column_sub
+                      a.footer_sub_title href='#' Your&nbsp;agile&nbsp;team
+                    li.footer_column_sub
+                      a.footer_sub_title href='#' Offshore&nbsp;development
+                    li.footer_column_sub
+                      a.footer_sub_title href='#' Software&nbsp;delivery
+            #menu_bottom
+              ul#footer_columns
+                li.footer_column
+                  a.footer_title SERVICES
+                  ul.footer_columns_sub
+                    li.footer_column_sub
+                      a.footer_sub_title href='/en/services/consulting' Consulting
+                    li.footer_column_sub
+                      a.footer_sub_title href='/en/services/product_development' Product&nbsp;development
+                    li.footer_column_sub
+                      a.footer_sub_title href='/en/services/application_development' Application&nbsp;development
+                    li.footer_column_sub
+                      a.footer_sub_title href='/en/services/application_testing' Application&nbsp;testing
+                      ul.footer_columns_sub
+                        li.footer_column_sub
+                          a.footer_sub_title href='#' Testing&nbsp;services
+                        li.footer_column_sub
+                          a.footer_sub_title href='#' Test&nbsp;automation
+                        li.footer_column_sub
+                          a.footer_sub_title href='#' Performance&nbsp;testing&nbsp;&&nbsp;optimization
+                    li.footer_column_sub
+                      a.footer_sub_title href='/en/services/application_maintenance_and_support' Application&nbsp;maintenance&nbsp;&&nbsp;support
+            #menu_bottom
+              ul#footer_columns
+                li.footer_column
+                  a.footer_title COMPANY
+                  ul.footer_columns_sub
+                    li.footer_column_sub
+                      a.footer_sub_title href='/en/company/about_us' About&nbsp;Us
+                    li.footer_column_sub
+                      a.footer_sub_title href='/en/company/expertise' Expertise
+                    li.footer_column_sub
+                      a.footer_sub_title href='/en/company/contact_us' Contact&nbsp;Us
+      #footer
+        #block_line_grey
+          .line_black_light
+          #block_cprt
+            a#cprt &copy; #{MAGENETE.get_copyright}
+    #block_scroll_bottom
+      a#scroll_bottom href='#page_top'
+      #preload_scroll_bottom_select
+    #page_bottom

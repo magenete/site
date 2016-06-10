@@ -1,0 +1,15 @@
+#
+# Copyright (c) 2015 Magenete Systems OÜ <magenete.systems@gmail.com>.
+#
+
+# Estonian
+
+ee:
+  pages:
+    company/contact_us:
+      title: Контакты
+      keywords: мадженете руби рэйлс рор линукс
+      description: Нашi контакты
+      id: 2
+      title_head: Информацiя о кнтактах
+      view_map: True

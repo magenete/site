@@ -1,0 +1,19 @@
+#
+# Copyright (c) 2015 Magenete Systems OÜ <magenete.systems@gmail.com>.
+#
+
+# Estonian
+
+ee:
+  vendor:
+    locale: eesti
+    name: Magenete Systems OÜ
+    copyright: Kõik õigused kaitstud
+    motto:
+      1: OLGU TEHNOLOOGIA TööD
+      2: TEILE JA LOODUS
+
+  root:
+    title: Tere tulemast Magenete
+    keywords: ruby rails ror linux docker sinatra
+    description: Avakuva

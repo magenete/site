@@ -1,0 +1,13 @@
+#
+# Copyright (c) 2015 Magenete Systems OÜ <magenete.systems@gmail.com>.
+#
+
+en:
+  pages:
+    company/contact_us:
+      title: Contact us
+      keywords: magenete ruby rails ror linux docker
+      description: Contacts company page
+      id: 2
+      title_head: HContacts your company
+      view_map: True
